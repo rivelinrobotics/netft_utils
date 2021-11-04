@@ -241,10 +241,10 @@ void NetftUtils::netftCallback(const geometry_msgs::WrenchStamped::ConstPtr& dat
   // Filter data
   std::vector<double> tempData;
   tempData.resize(6);
-  tempData.at(0) = -data->wrench.force.x;
+  tempData.at(0) = data->wrench.force.x;
   tempData.at(1) = data->wrench.force.y;
   tempData.at(2) = data->wrench.force.z;
-  tempData.at(3) = -data->wrench.torque.x;
+  tempData.at(3) = data->wrench.torque.x;
   tempData.at(4) = data->wrench.torque.y;
   tempData.at(5) = data->wrench.torque.z;
   
