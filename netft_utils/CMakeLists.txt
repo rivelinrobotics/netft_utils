@@ -62,8 +62,8 @@ add_library(
 )
 target_compile_features(netft_hardware_interface PUBLIC cxx_std_17)
 target_include_directories(netft_hardware_interface PUBLIC
-$<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/hardware/include>
-$<INSTALL_INTERFACE:include/netft_hardware_interface>
+$<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>
+$<INSTALL_INTERFACE:include>
 )
 target_link_libraries(netft_hardware_interface PUBLIC netft_rdt_driver)
 ament_target_dependencies(
